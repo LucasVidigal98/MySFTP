@@ -73,7 +73,7 @@ public class User {
         
         io.flush();
         
-        String command = "pass " + user + " " + passwd;
+        String command = "login " + user + " " + passwd;
         io.writeObject(command);
         
         io.close();
