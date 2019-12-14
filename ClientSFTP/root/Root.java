@@ -110,7 +110,7 @@ public class Root {
         
         io.flush();
         
-        String command = "pass " + "root " + passwd;
+        String command = "login " + "root " + passwd;
         io.writeObject(Encripty(command.getBytes(), key));
         
         io.close();
